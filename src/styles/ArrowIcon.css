@@ -1,0 +1,14 @@
+/* ArrowIcon.scss */
+
+/* Styles pour l'icône de flèche */
+.bi-arrow-up-circle {
+    /* Ajoutez ici les styles CSS pour personnaliser l'apparence de l'icône */
+    /* Par exemple, la couleur, la taille, la marge, etc. */
+  
+    /* Exemple de style pour changer la couleur de l'icône en bleu */
+    color: blue;
+  
+    /* Exemple de style pour augmenter la taille de l'icône */
+    font-size: 24px;
+  }
+  

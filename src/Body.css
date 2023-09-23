@@ -1,0 +1,17 @@
+/* Styles pour le composant Body */
+.body {
+    margin: 50px; /* Augmentez les marges pour le contenu principal */
+  }
+  
+  /* Styles pour le footer */
+  .footer {
+    width: 100%; /* Faites en sorte que le footer occupe toute la largeur */
+  }
+  
+  /* Styles pour la mise en page réactive */
+  @media screen and (max-width: 768px) {
+    .body {
+      margin: 20px; /* Réduisez les marges pour les écrans plus petits */
+    }
+  }
+  

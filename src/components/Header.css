@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(128, 128, 128, 0.3); /* Couleur grise avec opacité */
+  z-index: 1000;
+  display: flex; /* Utilisez flexbox pour centrer le contenu */
+  justify-content: space-between; /* Espacement des éléments à droite */
+  align-items: center; /* Centre verticalement le contenu */
+  height: 150px; /* Augmentez la hauteur de l'en-tête selon vos besoins */
+  padding: 0 20px; /* Ajoutez des marges à gauche et à droite */
+  /* Ajoutez vos styles spécifiques à l'en-tête ici */
+}
+
+/* Styles pour la liste des liens */
+.nav ul {
+  list-style: none;
+  display: flex; /* Utilisez flexbox pour espacer les liens */
+}
+
+/* Styles pour chaque lien */
+.nav li {
+  margin-right: 20px; /* Espacement entre les liens */
+}
+
+/* Styles pour les liens */
+.nav a {
+  text-decoration: none;
+  color: #fff; /* Couleur du texte des liens */
+  font-weight: bold; /* Style du texte des liens */
+  font-size: 1.8rem; /* Augmentez la taille de la police selon vos besoins */
+}
+
+/* Styles pour le bouton de toggle */
+.toggle-nav-button {
+  display: none; /* Masquez le bouton en mode desktop */
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles pour la navigation en mode tablette et mobile */
+  .nav {
+    display: none;
+  }
+
+  /* Affichez le bouton de toggle en mode tablette et mobile */
+  .toggle-nav-button {
+    display: block;
+  }
+}

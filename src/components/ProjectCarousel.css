@@ -1,0 +1,31 @@
+@import './your-other-sass-file'; // Importez d'autres fichiers SASS au besoin
+
+.project-carousel {
+  .container {
+    max-width: 100%; // Utilisez la largeur maximale de l'écran
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .slick-slider {
+    width: 100%;
+  }
+
+  .slick-slide {
+    padding: 0 10px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .slick-slide {
+      flex-direction: column; // Pour les écrans de petite taille, changez la direction des cartes
+      text-align: center; // Centrez le texte
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Rétablissez une ombre légère
+      padding: 20px 0; // Ajustez l'espacement vertical
+    }
+  }
+}

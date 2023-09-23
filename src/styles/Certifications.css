@@ -1,0 +1,42 @@
+.certifications-container {
+  /* ... autres styles ... */
+}
+
+.certification-cards {
+  margin-top: var(--margin-top-15);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne */
+  grid-gap: 20px;
+}
+
+.certification-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.certification-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.certification-card a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.certification-card a:hover {
+  color: #0056b3;
+}
+
+

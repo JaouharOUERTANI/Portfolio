@@ -1,0 +1,60 @@
+/* Styles spécifiques à la page Home */
+.hero,
+h1 {
+  font-size: var(--police-h1);
+  margin-top: var(--margin-top-15);
+  text-align: var(--centered-horizontally); 
+}
+
+.hero-text,
+.about-me-text {
+  font-size: var(--police-paragraph);  
+  text-align: var(--centered-horizontally);
+}
+
+.tech-stack,
+h2 {
+  margin-top: var(--margin-top-10);
+  font-size: var(--police-h2);
+  text-align: var(--centered-horizontally);
+}
+
+.tech-stack ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Centre le contenu de la liste horizontalement */
+  display: flex;
+  flex-wrap: wrap; /* Deux colonnes en mode desktop et tablette */
+}
+
+.tech-stack li {
+  margin: 10px; /* Ajoute une marge autour de chaque élément */
+  max-width: 200px;
+  flex: 0 0 calc(50% - 20px); /* Deux colonnes en mode desktop et tablette */
+
+  @media screen and (max-width: 400px) {
+    flex: 0 0 100%; /* Une colonne en mode mobile */
+  }
+}
+
+.about-me {
+  margin-bottom: var(--margin-bottom-10); /* Marge entre le carousel et la section supérieure */
+}
+
+/* Styles pour mettre en valeur le carousel */
+.carousel {
+  background-color: #f2f2f2;
+  padding: 20px; 
+  border-radius: 5px;
+}
+
+/* Styles pour le mode responsive */
+@media screen and (max-width: 768px) {
+  .tech-stack li {
+    max-width: calc(50% - 20px); /* Pour afficher 2 icônes par ligne en mode tablette */
+  }
+}
+
+.footer {
+  margin-top: var(--margin-top-10); /* Marge entre le footer et le carousel */
+}

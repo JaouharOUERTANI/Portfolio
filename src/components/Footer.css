@@ -1,0 +1,30 @@
+/* Réinitialise les marges et les rembourrages par défaut */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour le pied de page */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  height: 150px;
+  margin: 0;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.credit-text {
+  font-size: 16px;
+}
